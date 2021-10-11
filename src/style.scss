@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html, body {
+    height: 100%;
+}
+body{
+  background-image: url("https://st3.depositphotos.com/11911276/32540/i/950/depositphotos_325401910-stock-photo-close-up-of-programming-code.jpg");
+  backdrop-filter: blur(4px);
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.header {
+  font-family: 'Oswald', sans-serif;
+  background-color: #aed2f5;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+.main {
+  background-color: #aed2f5;
+  border-radius: 10px;
+  border: solid 5px #be79f2;
+  height: 60%;
+  width: 900px;
+  padding: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  color: blue;
+}
+a:visited{
+  color: black;
+}
+.photo{
+  overflow: hidden;
+  border-radius: 10px;
+  border: solid 7px #be79f2;
+  animation: change_color;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  #image{
+     display: block;
+     width: 300px;
+  }
+}
+@keyframes change_color{
+  0%{
+    border: solid 7px blue;
+  }
+  50%{
+    border: solid 7px #b35df5;
+  }
+  100%{
+    border: solid 7px violet;
+  }
+}
+.inform{
+  padding-left: 20px;
+}
+.img:hover {
+  border-width: 10px;
+}
+
+.msg{
+  padding: 10px 0px;
+}
+#textbox{
+  display: block;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+.button{
+  padding-top:10px;
+}
+#vk_icon{
+  color: blue;
+  width: 20px;
+}
+#email_icon{
+  color: black;
+  width: 20px;
+}
+#inst_icon{
+  color: #bb28d1;
+  width: 20px;
+}
+#button{
+  display: block;
+  width: 300px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  &:hover {
+    background-color: #95cccc;
+    border-color: #95cccc;
+    transition: all .1s ease-in-out;
+  }
+}
+.personal_information{
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  padding: 5px 0px;
+}
+.social-networks{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16pt;
+  color: blue;
+  display: block;
+  padding: 5px 0px;
+}
+.about_me{
+  font-family: 'Quicksand', sans-serif;
+}
+.title{
+  font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  .inform{
+    padding: 0;
+  }
+  .main{
+    height: 100%;
+    flex-direction: column;
+  }
+}
