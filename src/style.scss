@@ -23,9 +23,18 @@ body{
     width: 100%;
   }
 }
+.card {
+  height: 85%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  align-content: center;
+}
 .header {
   font-family: 'Oswald', sans-serif;
   background-color: #aed2f5;
+  height: 91px;
+  margin: 0;
   padding: 10px;
   text-align: center;
   color: black;
@@ -36,16 +45,17 @@ body{
 }
 
 .main {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  align-content: center;
   background-color: #aed2f5;
   border-radius: 10px;
   border: solid 5px #be79f2;
-  height: 60%;
+  height: 481px;
   width: 900px;
   padding: 40px;
   margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 a{
   color: blue;
@@ -84,6 +94,7 @@ a:visited{
   padding: 10px 0px;
 }
 #textbox{
+  padding-left: 10px;
   display: block;
   width: 300px;
   height: 40px;
